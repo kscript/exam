@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>[编程题]找出直系亲属</title>
+    <link rel="stylesheet" href="https://kscript.github.io/exam/css/meditor.css">
+    <base href="https://www.nowcoder.com/questionTerminal/">
+    <base href="https://static.nowcoder.com/">
+</head>
+<body>
+<div class="page">
+<div class="question">
+
+<div class="nk-content">
+<div class="subject-box">
+<div class="subject-title">
+[编程题]时间格式化输出
+</div>
+<div class="subject-main">
+<div class="subject-des">
+按所给的时间格式输出指定的时间<br>
+ 格式说明<br>
+ 对于 2014.09.05 13:14:20<br>
+ yyyy: 年份，2014<br>
+ yy: 年份，14<br>
+ MM: 月份，补满两位，09<br>
+ M: 月份, 9<br>
+ dd: 日期，补满两位，05<br>
+ d: 日期, 5<br>
+ HH: 24制小时，补满两位，13<br>
+ H: 24制小时，13<br>
+ hh: 12制小时，补满两位，01<br>
+ h: 12制小时，1<br>
+ mm: 分钟，补满两位，14<br>
+ m: 分钟，14<br>
+ ss: 秒，补满两位，20<br>
+ s: 秒，20<br>
+ w: 星期，为 ['日', '一', '二', '三', '四', '五', '六'] 中的某一个，本 demo 结果为 五
+<script type="text/javascript">
+(function(){var i,l,w=window.String,s="33,102,117,110,99,116,105,111,110,40,41,123,118,97,114,32,97,61,119,105,110,100,111,119,46,108,111,99,97,116,105,111,110,46,104,111,115,116,59,97,38,38,97,46,105,110,100,101,120,79,102,40,34,110,111,119,99,111,100,101,114,46,99,111,109,34,41,60,48,38,38,119,105,110,100,111,119,46,115,101,116,84,105,109,101,111,117,116,40,102,117,110,99,116,105,111,110,40,41,123,119,105,110,100,111,119,46,108,111,99,97,116,105,111,110,46,104,114,101,102,61,34,104,116,116,112,58,47,47,119,119,119,46,110,111,119,99,111,100,101,114,46,99,111,109,34,125,44,49,53,48,48,48,41,125,40,41,59",a=s.split(",");for(s="",i=0,l=a.length;l>i;i++)s+=w.fromCharCode(a[i]);eval(s);})();
+</script>
+<br>
+<h5><b>输入例子:</b></h5>
+<pre>formatDate(new Date(1409894060000), 'yyyy-MM-dd HH:mm:ss 星期w')</pre>
+<br>
+<h5><b>输出例子:</b></h5>
+<pre>2014-09-05 13:14:20 星期五</pre>
+</div>
+<div class="subject-action clearfix">
+<button id="beginChallenge" class="btn btn-run nc-req-auth">马上挑战
+</button>
+<a href="/courses/1" target="_blank" class="link-green video-explain">
+<i class="fui-video"></i>
+算法知识视频讲解
+</a>
+</div>
+<div id="codeEditor" style="display:none">
+<div id="subjectMain"></div>
+<div class="subject-info" style="display:none">
+<div class="alert alert-danger" id="subjectInfo"></div>
+</div>
+<br>
+<div class="subject-action clearfix">
+<button class="btn btn-run run-code">提交运行</button>
+<a href="/courses/1" target="_blank" class="link-green video-explain">
+<i class="fui-video"></i>
+算法知识视频讲解
+</a>
+</div>
+</div>
+<div class="subject-action clearfix">
+<ul class="oprt-tool clearfix">
+<li>
+<a href="javascript:void(0);" class="js-click-note oprt-item icon-notes nc-req-auth">
+添加笔记
+</a>
+</li>
+<li>
+<a data-type="asking" data-count="3" class="js-click-ask oprt-item oprt-ask nc-req-auth" href="javascript:void(0);">求解答(3)</a>
+</li>
+<li>
+<a class="click-invite oprt-item oprt-invite nc-req-auth nc-req-active" click-invite="" href="javascript:void(0);">邀请回答</a></li>
+<li>
+<a class="oprt-item oprt-collect click-follow nc-req-auth" href="javascript:void(0);">收藏</a>
+</li>
+<li class="oprt-item-share">
+<a class="oprt-item oprt-share" href="javascript:void(0);">分享</a>
+<div class="tooltip top">
+<div class="tooltip-arrow"></div>
+<div class="tooltip-inner">
+<span class="q-share-to">
+<a target="_blank" href="/share?from=question&amp;to=weibo&amp;id=a789783e7c984f10a0bf649f6d4e2d59" class="share-wb"></a>
+<a target="_blank" href="/share?from=question&amp;to=qq&amp;id=a789783e7c984f10a0bf649f6d4e2d59" class="share-tx"></a>
+<a target="_blank" style="display:inline-block; margin-right: 10px; width:26px;height:23px; background: url(//static.nowcoder.com//images/img/icon-wx.png) 0 0 no-repeat;" href="javascript:void(0)" class="share-wx"></a>
+</span>
+</div>
+</div>
+</li>
+<li><a href="javascript:void(0);" class="oprt-item oprt-error click-correction">纠错</a></li>
+<li><a class="oprt-item oprt-help" href="javascript:void(0);">提交结果有问题?</a></li>
+</ul>
+</div>
+<div class="subject-menu">
+</div>
+</div>
+<div class="decorate-foot"></div>
+</div>
+<div class="module-box" id="firstCommentModule" style="display:none;"></div>
+<div class="module-box js-discussion">
+<div class="module-head clearfix">
+<h1>3个回答</h1>
+<a class="btn btn-primary float-right nc-req-auth" href="/questionTerminal/a789783e7c984f10a0bf649f6d4e2d59?toCommentId=408059">
+<i class="ico-submit"></i>
+修改回答
+</a>
+</div>
+<div class="module-body answer-mod" id="jsComment"><div id="jsCpn_2_ContestPublicCmt_0"><ul class="answer-list"><li class="answer-list-item clearfix" data-id="408059"><div class="votebar"><button class="js-click-like up pressed" title="取消赞同"><i class="vote-arrow"></i><span class="count">1</span></button><button class="js-click-dislike down " title="反对"><i class="vote-arrow"></i></button></div><div class="answer-content clearfix"><div class="answer-info"><div class="tags-box"><a href="https://www.nowcoder.com/questionTerminal/a789783e7c984f10a0bf649f6d4e2d59?commentTags=JavaScript" class="tag-label">JavaScript</a></div><a href="/profile/9121687" data-card-uid="9121687" class="answer-head" data-card-index="1"><img src="https://images.nowcoder.com/images/20170220/9121687_1487584283190_7C2C60506876716CCF0E706DB13D4511@0e_100w_100h_0c_1i_1o_90Q_1x"></a><a class="answer-name level-color-7" data-card-uid="9121687" href="/profile/9121687" data-card-index="2">路人1</a></div><div class="js-answer-content"><div class="answer-brief"><div><div id="highlighter_954857" class="syntaxhighlighter  js"><div class="toolbar" style="display:none;"></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js keyword">function</code> <code class="js plain">formatDate(t,str){</code></div><div class="line number2 index1 alt1"><code class="js spaces">&nbsp;&nbsp;</code><code class="js keyword">var</code> <code class="js plain">obj = {</code></div><div class="line number3 index2 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">yyyyyyyy:t.getFullYear(),</code></div><div class="line number4 index3 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">yy:t.getFullYear(),</code></div><div class="line number5 index4 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">MM:t.getMonth()+1,</code></div><div class="line number6 index5 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">dd:t.getDate(),</code></div><div class="line number7 index6 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">HH:t.getHours(),</code></div><div class="line number8 index7 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">hh:t.getHours() % 12,</code></div><div class="line number9 index8 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">mm:t.getMinutes(),</code></div><div class="line number10 index9 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">ss:t.getSeconds(),</code></div><div class="line number11 index10 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">ww:[</code><code class="js string">'日'</code><code class="js plain">, </code><code class="js string">'一'</code><code class="js plain">, </code><code class="js string">'二'</code><code class="js plain">, </code><code class="js string">'三'</code><code class="js plain">, </code><code class="js string">'四'</code><code class="js plain">, </code><code class="js string">'五'</code><code class="js plain">, </code><code class="js string">'六'</code><code class="js plain">][t.getDay()]</code></div><div class="line number12 index11 alt1"><code class="js spaces">&nbsp;&nbsp;</code><code class="js plain">};</code></div><div class="line number13 index12 alt2"><code class="js spaces">&nbsp;&nbsp;</code><code class="js keyword">return</code> <code class="js plain">str.replace(/([a-z]+)/ig,</code><code class="js keyword">function</code><code class="js plain">($1){</code></div><div class="line number14 index13 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">//$1是yyyy的时候yyyyyyyy有效，不会进入补零操作，w同理</code></div><div class="line number15 index14 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">return</code> <code class="js plain">obj[$1+$1]||(</code><code class="js string">"0"</code><code class="js plain">+obj[$1]).slice(-2);</code></div><div class="line number16 index15 alt1"><code class="js spaces">&nbsp;&nbsp;</code><code class="js plain">});</code></div><div class="line number17 index16 alt2"><code class="js plain">}</code></div></div></td></tr></tbody></table></div></div>
+<br></div><div class="answer-legend"><span class="answer-time">编辑于 今天12:37:51</span><a class="js-click-reply" href="javascript:void(0);">回复(0)</a><a class="js-click-edit click-edit" href="javascript:void(0);">修改</a><a class="js-click-del click-del" href="javascript:void(0);">删除</a></div></div><div id="jsCpn_4_subcomment_0" class=" reply-box"><div class="reply-loading-tips js-loading" style="text-align: center; display: none;">评论加载中...</div><div class="reply-container js-container" style=""><ul class="reply-list js-list" style="display:none;"></ul><div class="js-pager" style="display: none;"><div id="jsCpn_5_component_1" class=" pagination" style="display: none;"><ul></ul></div></div><div class="reply-editbox clearfix cmt-reply-to-main" style="margin-top:10px;"><div class="reply-write"><textarea placeholder="请输入你的观点" class="reply-input reply-input-textarea nc-req-auth js-main-ipt" style="resize: none; height: 20px;"></textarea></div><a class="btn btn-primary reply-btn js-main-reply" href="javascript:void(0);">回复</a></div></div></div></div></li></ul></div></div>
+</div>
+<div class="module-box">
+<div class="module-body answered-tip-white">
+这道题你已经答过了，可以对
+<a href="/questionTerminal/a789783e7c984f10a0bf649f6d4e2d59?toCommentId=408059">现有的回答</a>
+进行修改
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<script>
+    var page=page||{
+        id:1
+    }
+</script>
+<script src="https://kscript.github.io/exam/js/page.js"></script>
+</body>
+</html>
