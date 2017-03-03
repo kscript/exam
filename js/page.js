@@ -10,7 +10,7 @@
 	creatEle("a",{
 		href:"https://kscript.github.io/exam/Q/"+(page.id+1)+".html",
 		style:{
-			cssText:"position:fixed;top:20px;left:auto;margin:0px 8px;"
+			cssText:"position:fixed;top:20px;left:auto;margin-left:52px;"
 		},
 		innerHTML:"下一题"
 	})
