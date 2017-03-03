@@ -11,7 +11,7 @@
 		style:{
 			cssText:"position:fixed;top:20px;left:auto;"
 		},
-		innerHTML:page.id==1"没有啦":"上一题"
+		innerHTML:page.id==1?"没有啦":"上一题"
 	}])
 
 	function creatEle(tagname,conf){
