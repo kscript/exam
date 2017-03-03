@@ -17,7 +17,7 @@
 	function creatEle(tagname,conf,parent){
 		var el=document.createElement(tagname);
 		for(var i in conf){
-			el[i]=conf.i;
+			el[i]=conf[i];
 		}
 		(parent||document.body).appendChild(el);
 	}
