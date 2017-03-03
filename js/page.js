@@ -14,12 +14,12 @@
 		innerHTML:page.id==1?"没有啦":"上一题"
 	}])
 
-	function creatEle(tagname,conf,parent){
+	function creatEle(tagname,conf,parentNode){
 		var el=document.createElement(tagname);
 		for(var i in conf){
 			el[i]=conf[i];
 		}
-		parent=parent||document.body;
-		parent.appendChild(el);
+		parentNode=parentNode||document.body;
+		parentNode.appendChild(el);
 	}
 })()
