@@ -19,6 +19,7 @@
 		for(var i in conf){
 			el[i]=conf[i];
 		}
-		(parent||document.body).appendChild(el);
+		parent=parent||document.body;
+		parent.appendChild(el);
 	}
 })()
